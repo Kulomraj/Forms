@@ -1,0 +1,736 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(background-wide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+.logo {
+    color: black;
+    font-size: 40px;
+  }
+
+a:link {
+    text-decoration: none;
+
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}  
+
+a:active {
+    color: brown;
+    text-decoration: none;
+}
+
+.form-grid-container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 10px solid transparent;
+    margin: 0 auto;
+}
+
+.form-container {
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 10px solid transparent;
+    margin: 0 auto;
+    min-width: 900px;
+}
+
+.register-form-container {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 6px auto;
+    position: relative;
+}
+
+h2 {
+    padding-bottom: 10px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.register-form-row {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 15px solid black;
+    border-radius: 6px;
+    position: absolute;
+    background: white;
+}
+
+.register-form-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 6px 0;
+}
+
+.register-form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+.input-row::before {
+    content: "";
+    position: absolute; right: 82%;
+    margin: 4px 0;
+    width: 1px;
+    height: 26px;
+    background: black;
+}
+
+.register-form-item input, 
+.register-form-item select,
+.register-form-item span {
+    height: 33px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + .acceptation-span::before {
+    content: "\f0c8";
+    color: transparent;
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.6;
+    font-size: 10px;
+    text-align: center;
+}
+
+@keyframes animate {
+    0% {
+      transform: scale(0);
+    }
+  
+    90% {
+      transform: scale(1.5);  
+    }
+  
+    100% {
+      transform: scale(1);
+    }  
+  }
+  
+input[type='checkbox']:checked + .acceptation-span::before {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.6;
+    font-size: 10px;
+    color: #00b300;
+    animation: animate 150ms ease-in; 
+}
+
+label[class='checkbox-level'] {
+    cursor: pointer;
+}
+
+.acceptation-span::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    position: absolute;
+    left: 5%;
+    border-radius: 2px;
+}
+
+.user-icon input[name='username'] {
+    background: url(icons/user-alt-solid.svg) no-repeat left;
+    background-size: 7%;
+    background-position-x: 7px;
+}
+
+.lock-icon input {
+    background: url(icons/lock-solid.svg) no-repeat left;
+    background-size: 7%;
+    background-position-x: 7px;
+}
+
+.envelope-icon input {
+    background: url(icons/envelope-solid.svg) no-repeat left;
+    background-size: 7%;
+    background-position-x: 7px;
+}
+
+.location-icon select {
+    background: url(icons/map-marker-alt-solid.svg) no-repeat left;
+    background-size: 6%;
+    background-position-x: 7px;
+}
+
+.phone-icon input {
+    background: url(icons/mobile-alt-solid.svg) no-repeat left;
+    background-size: 6%;
+    background-position-x: 7px;
+}
+
+input[placeholder] {
+    padding-left: 45px;
+    opacity: 0.5;
+}
+
+textarea[placeholder] {
+    opacity: 0.5;
+}
+
+select {
+    padding-left: 45px;
+    opacity: 0.5;
+}
+
+.acceptation-span {
+    font-size: 80%;
+    padding-left: 27px;
+    opacity: 0.5;
+}
+
+textarea {
+    padding: 6px 10px;
+}
+
+.sign-in-form-container {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 6px auto;
+    position: relative;
+}
+
+.sign-in-form-row {
+    width: 300px;
+    height: 180px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 15px solid black;
+    border-radius: 6px;
+    position: absolute;
+    background: white;
+}
+
+.sign-in-form-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 6px 0;
+}
+
+.sign-in-form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 45px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+.sign-in-form-item .sign-in-form-button-line {
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in-form-item .sign-in-form-button-line button {
+    padding-left: 20px;
+}
+
+.sign-in-form-item input {
+    height: 40px;
+}
+
+.send-email-form-container {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 25px auto;
+    position: relative;
+    margin-top: 170px;
+}
+
+.send-email-form-row {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 15px solid black;
+    border-radius: 6px;
+    position: absolute;
+    background: white;
+}
+
+.send-email-form-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 6px 0;
+}
+
+.send-email-form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+.send-email-form input {
+    height: 33px;
+}
+
+.send-email-form textarea {
+    height: 175px;
+    resize: none
+}
+
+.recover-form-container {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 25px auto;
+    position: relative;
+}
+
+.recover-form-row {
+    width: 300px;
+    height: 180px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 15px solid black;
+    border-radius: 6px;
+    position: absolute;
+    background: white;
+}
+
+.recover-form-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 6px 0;
+}
+
+.recover-form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 45px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+.recover-form-item .recover-form-button-line {
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recover-form-item .recover-form-button-line button {
+    padding-left: 20px;
+}
+
+.recover-form-item input {
+    height: 40px;
+}
+
+.subscribe-form-container {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 25px auto;
+    position: relative;
+    margin-right: 75px;
+    margin-top: -150px; 
+}
+
+.subscribe-form-row {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 15px solid black;
+    border-radius: 6px;
+    position: absolute;
+    background: white;
+}
+
+.subscribe-form-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 6px 0;
+}
+
+.subscribe-form-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 45px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6px 0;
+}
+
+.subscribe-form-item .subscribe-form-button-line {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-form-item .subscribe-form-button-line button {
+    padding-left: 20px;
+}
+
+.subscribe-form-item input {
+    height: 40px;
+}
+
+.footer-container {
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+.logo-footer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: -70px;
+    right: -85px;
+  }
+
+.logo-footer-item {
+    color: black;
+    font-size: 35px;
+  }
+
+.first-item {
+    position: absolute;
+    bottom: 80px;
+    right: 234px;
+} 
+
+.webpage {
+    padding: 30px 0;
+    font-size: 20px;
+}  
+
+.register-form-button {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #00b300;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+.register-form-button:hover {
+    background: #00cc00;
+}
+
+.register-form-button:active {
+    background: #008000;
+}
+
+.sign-in-form-button-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-in-form-button {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #00b300;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 15px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    width: 40%;
+    white-space: nowrap; 
+}
+
+.sign-in-form-button:hover {
+    background: #00cc00;
+}
+
+.sign-in-form-button:active {
+    background: #008000;
+}
+
+.send-email-form-button {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #00b300;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+.send-email-form-button:hover {
+    background: #00cc00;
+}
+
+.send-email-form-button:active {
+    background: #008000;
+}
+
+.recover-form-button-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.recover-form-button {
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: #00b300;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 22px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    height: 2.2em;
+    width: 45%;
+}
+
+.recover-form-button:hover {
+    background: #00cc00;
+}
+
+.recover-form-button:active {
+    background: #008000;
+}
+
+.recover-form-button-done {
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: #bfff80;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 22px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    height: 2.2em;
+    width: 45%;
+}
+
+.recover-form-button-done:hover {
+    background: #ccff99;
+}
+
+.recover-form-button-done:active {
+    background: #b3ff66;
+}
+
+.subscribe-form-button-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.subscribe-form-button {
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: #00b300;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 22px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    height: 2.4em;
+    width: 45%;
+}
+
+.subscribe-form-button:hover {
+    background: #00cc00;
+}
+
+.subscribe-form-button:active {
+    background: #008000;
+}
+
+.subscribe-form-button-no {
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 22px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    height: 2.4em;
+    width: 45%;
+}
+
+.subscribe-form-button-no:hover {
+    background: #ff6666;
+}
+
+.subscribe-form-button-no:active {
+    background: #ff3333;
+}
+
+@media (max-width: 1274px) {
+    body {
+        background: url(background-tall.jpg);
+        background-repeat: no-repeat;
+        background-size: 1300px 3400px;
+        background-position: center;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .form-container {
+        flex-direction: column;
+        min-width: auto;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .sign-in-form-container {
+        position: absolute;
+        top: 500px;
+    }
+
+    .send-email-form-container {
+        position: absolute;
+        top: 580px;
+    }
+
+    .recover-form-container {
+        position: absolute;
+        top: 1190px;
+    }
+
+    .subscribe-form-container {
+        position: absolute;
+        top: 1610px;
+    }
+
+    .footer-container {
+        position: absolute;
+        top: 1700px;
+        width: 450px;
+    }
+}
+
+
+
+
+
