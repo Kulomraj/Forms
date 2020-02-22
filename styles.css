@@ -57,7 +57,7 @@ a:active {
 
 .form-grid-container {
     width: 80%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -88,7 +88,7 @@ a:active {
 }
 
 h2 {
-    padding-bottom: 10px;
+    padding-bottom: 28px;
     margin: 0 auto;
     color: white;
     text-shadow: 1px 1px 2px black;
@@ -96,11 +96,11 @@ h2 {
 
 .register-form-row {
     width: 300px;
-    height: 350px;
+    height: 330px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: 15px solid black;
+    box-shadow: 0 0 2px 15px rgba(0,0,0, 0.25);
     border-radius: 6px;
     position: absolute;
     background: white;
@@ -124,7 +124,7 @@ h2 {
     border-radius: 6px;
     width: 100%;
     margin: 0 auto;
-    padding: 6px 0;
+    padding: 7px 0;
 }
 
 .input-row::before {
@@ -268,11 +268,11 @@ textarea {
 
 .sign-in-form-row {
     width: 300px;
-    height: 180px;
+    height: 150px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: 15px solid black;
+    box-shadow: 0 0 2px 15px rgba(0,0,0, 0.25);
     border-radius: 6px;
     position: absolute;
     background: white;
@@ -297,7 +297,7 @@ textarea {
     height: 45px;
     width: 100%;
     margin: 0 auto;
-    padding: 6px 0;
+    padding: 7px 0;
 }
 
 .sign-in-form-item .sign-in-form-button-line {
@@ -329,11 +329,11 @@ textarea {
 
 .send-email-form-row {
     width: 300px;
-    height: 400px;
+    height: 380px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: 15px solid black;
+    box-shadow: 0 0 2px 15px rgba(0,0,0, 0.25);
     border-radius: 6px;
     position: absolute;
     background: white;
@@ -357,7 +357,7 @@ textarea {
     border-radius: 6px;
     width: 100%;
     margin: 0 auto;
-    padding: 6px 0;
+    padding: 7px 0;
 }
 
 .send-email-form input {
@@ -381,11 +381,11 @@ textarea {
 
 .recover-form-row {
     width: 300px;
-    height: 180px;
+    height: 150px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: 15px solid black;
+    box-shadow: 0 0 2px 15px rgba(0,0,0, 0.25);
     border-radius: 6px;
     position: absolute;
     background: white;
@@ -410,7 +410,7 @@ textarea {
     height: 45px;
     width: 100%;
     margin: 0 auto;
-    padding: 6px 0;
+    padding: 7px 0;
 }
 
 .recover-form-item .recover-form-button-line {
@@ -443,11 +443,11 @@ textarea {
 
 .subscribe-form-row {
     width: 300px;
-    height: 140px;
+    height: 110px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: 15px solid black;
+    box-shadow: 0 0 2px 15px rgba(0,0,0, 0.25);
     border-radius: 6px;
     position: absolute;
     background: white;
@@ -472,7 +472,7 @@ textarea {
     height: 45px;
     width: 100%;
     margin: 0 auto;
-    padding: 6px 0;
+    padding: 7px 0;
 }
 
 .subscribe-form-item .subscribe-form-button-line {
@@ -706,22 +706,22 @@ textarea {
 
     .sign-in-form-container {
         position: absolute;
-        top: 500px;
+        top: 510px;
     }
 
     .send-email-form-container {
         position: absolute;
-        top: 580px;
+        top: 590px;
     }
 
     .recover-form-container {
         position: absolute;
-        top: 1190px;
+        top: 1200px;
     }
 
     .subscribe-form-container {
         position: absolute;
-        top: 1610px;
+        top: 1620px;
     }
 
     .footer-container {
